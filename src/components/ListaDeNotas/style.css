@@ -1,0 +1,17 @@
+.container-notas {
+    width:700px;
+    padding:30px;
+    height: auto;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    position: relative;
+}
+
+.container-notas_item{
+    list-style: none;
+    width:300px;
+}
+li {
+    position: relative;
+}
