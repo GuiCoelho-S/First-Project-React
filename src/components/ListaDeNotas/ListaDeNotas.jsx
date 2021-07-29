@@ -1,19 +1,25 @@
-import React from "react"
+import React, { Component } from "react"
 import  CardNota  from "../CardNota"
 import "./style.css"
-const ListaDeNotas = () => {
-    return (
-        <ul className="container-notas">
-            {Array.of("Trabalho","Trabalho","Estudos",1,1,1,1,1,1,1,1,1,1).map((categoria, index) => {
+
+export default class ListaDenotas extends Component {
+
+
+    render(){
+        return(
+            <section className="notas">
+            <ul className="container-notas">
+            {this.props.notas.map((nota, index) => {
                 return (
                     <li key={index} className="container-notas_item">
                         
-                        <CardNota/>
+                        <CardNota titulo={nota.titulo} texto={nota.texto}/>
                     </li>  
                 );
             })}
                          
         </ul>
-    )
+        </section>
+        )
+    }
 }
-export default ListaDeNotas

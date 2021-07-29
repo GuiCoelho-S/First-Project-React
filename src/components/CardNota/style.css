@@ -13,9 +13,11 @@
 }
 .card-nota_title {
     padding-left:20px;
+    padding-bottom: 10px;
     font-size: 20px;
     color:red;
-    text-overflow: ellipsis;
+    
+    word-wrap: break-word;
 }
 .card-nota_text {
     word-wrap: break-word;

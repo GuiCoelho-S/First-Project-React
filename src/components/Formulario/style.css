@@ -23,7 +23,7 @@
     background-color: whitesmoke;
 }
 .formulario_textarea {
-
+    
     resize:none;
     border-radius: 8px;
     border:1px solid lightblue;
@@ -41,4 +41,22 @@
     padding: 10px;
     outline: none;
     font-size: 16px;
+}
+
+@media screen and (max-width:740px){
+    .formulario_title {
+        width:100%;
+    }
+}
+@media screen and (max-width:440px) {
+    .formulario {
+        width:100%;
+        align-items: center;
+    }
+    .formulario_title {
+        width:80%;
+    }
+    .formulario_textarea {
+        width:80%;
+    }
 }
