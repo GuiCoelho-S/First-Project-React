@@ -11,12 +11,18 @@
     color:blue;
     padding:10px;
 }
+.card-nota_title--container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .card-nota_title {
     padding-left:20px;
     padding-bottom: 10px;
     font-size: 20px;
     color:red;
-    
+    width:90%;
+    height: auto;
     word-wrap: break-word;
 }
 .card-nota_text {

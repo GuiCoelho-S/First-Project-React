@@ -13,7 +13,11 @@ export default class ListaDenotas extends Component {
                 return (
                     <li key={index} className="container-notas_item">
                         
-                        <CardNota titulo={nota.titulo} texto={nota.texto}/>
+                        <CardNota 
+                            indice={index}
+                            apagarNota={this.props.apagarNota}
+                            titulo={nota.titulo} 
+                            texto={nota.texto}/>
                     </li>  
                 );
             })}
